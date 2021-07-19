@@ -16,13 +16,40 @@ Desafio - Criar um sistema de e-commerce para cadastro de email na landing page 
 
 -Dados no localstorage
 
-- Não é preciso ter domínio próprio e recomendamos o Netlify para hospedagem.
+- Não é preciso ter domínio próprio e recomendamos o Netlify para hospedagem.git
+
+## Resultado:
+
+O aplicativo foi montado, tendo em vista uma aplicação completa (escalável). A landing page apresentada faz parte de um contexto mais amplo, em desenvolvimento.
+
+Como exercício para o aprendizado, desenvolveu-se a página na área dedicada aos testes, situada no diretório [src/assets/lab/frontend].
+
+Para os estilos utilizados na página indexLandPage.js foram empregados os componentes desenvolvidos com a biblioteca 'styled-components' (https://www.npmjs.com/package/styled-components/v/4.1.3).
+
+As referências utilizadas e os agradecimentos vão para:
+
+Todos os instrutures, mentores e alunos da Gama Academy (https://www.gama.academy/), e
+
+- Styled Components website (https://styled-components.com/docs/basics);
+- CSS Tricks (https://css-tricks.com/almanac/properties/b/backdrop-filter/);
+- UI Hut (https://www.uihut.com/web-template/header-besnik-e-learning-landing-page/8132);
+- Andy Adams (https://codepen.io/andyadams/pen/NQrrJv);
+
+# Algumas Instruções Básicas
 
 ## Hospedando o app no Heroku
 
-1. Buildpack:
+Após criar a sua conta e confirmar os seus dados no Heroku, siga os passos detalhados na plataforma. 
 
-https://buildpack-registry.s3.amazonaws.com/buildpacks/mars/create-react-app.tgz
+Contudo, no caso do React, a instrução abaixo é FUNDAMENTAL.
+
+#### Um passo que não se pode escapar diz respeito ao buidpack para o react. 
+
+Siga para a página das configurações do aplicativo e adicione:
+
+1. Buildpack para o React:
+
+- https://buildpack-registry.s3.amazonaws.com/buildpacks/mars/create-react-app.tgz
 
 
 

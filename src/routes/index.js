@@ -33,10 +33,10 @@ const Routes = () => (
   //
   <BrowserRouter>
     <Switch>
-      <Route path='/' exact component={BfPage} />
-      <Route path='/store' exact component={Home} />
+      {/* <Route path='/' exact component={BfPage} /> */}
+      {/* <Route path='/store' exact component={Home} /> */}
       <Route path='/training' exact component={FathersDayPage} />
-      <Route path='*' exact component={Error} />
+      <Route path='*' component={Error} />
       {/* <Route exact path='/gitrepos' component={GitRepos} />
       <Route exact path='/getrepos' component={GetRepos} /> */}
     </Switch>

@@ -16,20 +16,28 @@
 //// Gama Academy | Hiring Coders | [HC] Challenge 01 | Landing Page
 //
 // ------------------------------------------------------------------------
-//  src/assets/lab/frontend/indexLandingPage.js
+//  src/assets/lab/frontend/indexLandingPage.js - (UNDER REVIEW)
 // ------------------------------------------------------------------------
 /** Imports (requirements) */
 // import React, { Fragment, useState } from "react";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 /** Imports (app) */
-import iMacImage from "./../../images/sale/fathersday/247-2477466_monitor-mac-png-imac-pro-2017.png";
 import "./index.css";
+import OPoder from "./../../images/sale/blackfriday/poder_Vieira.png"
 import * as S from "./boxStyles";
 import * as C from "./CardOne";
+import * as Nav from "./fixedRawNavbar";
 /**  */
 export default function FathersDayPage() {
-  //
+  // Navbar
+  const navBarItems = [
+    { txt: "MOVE", link: "/training#boxNone" },
+    { txt: "TO", link: "/training#boxOpacity" },
+    { txt: "NEW", link: "/training#boxBlur" },
+    { txt: "LEVEL", link: "/training#boxDropShadow" },
+  ];
+  // Text
   const firstBoxHeader = "It's More Than a Dream...";
   const firstBoxSubheader = "And it can make YOUR dreams come true";
   const firstBoxCallToNext =
@@ -45,30 +53,37 @@ export default function FathersDayPage() {
   const cardSubheaderText = "Our best deals won't last...";
   const cardParagraphText =
     "Stay among those people which are always ahead in their industries. Be the first to know everything about our products, subscribing to our newsletter. It's FREE!";
-  const textBoxOne = "Get it FIRST!";
-  const textBoxTwo =
-    "Text for box two is your opportunity do make things happen for your beloved old man!";
-  const textBoxThree = "Text for BOX Three";
-  const textBoxFour = "Text for BOX Four";
-  const textBoxFive = "Text for BOX Five";
-  //
+  const emailInvalidInputMessage = "Please, enter a valid e-mail address...";
+  // States
   const [userEmail, setUserEmail] = useState("");
   const [emailError, setEmailError] = useState(false);
+  // Handlers
   const navHistory = useHistory();
+  const handleEmailInput = (e) => {
+    setUserEmail(e.target.value);
+  };
   const handleForm = () => {
-    if (userEmail === ""){
+    if (userEmail === "" || userEmail.indexOf("@") === -1) {
+      console.log(emailInvalidInputMessage);
       setEmailError(true);
       return;
     }
     localStorage.setItem("guestData", userEmail);
     navHistory.push("/#");
   };
-  //
+  // JSX
   return (
     // <Fragment>
     //   <S.PageHtml>
     // <S.Body>
     <S.PageContainer>
+      <Nav.NavBarUl>
+        {navBarItems.map((navItem, navLink) => (
+          <Nav.NavBarLi key={navLink}>
+            <a href={navItem.link}>{navItem.txt}</a>
+          </Nav.NavBarLi>
+        ))}
+      </Nav.NavBarUl>
       <S.BoxesContainer>
         <S.BoxDropShadow id="boxDropShadow">
           <S.BoxInsiderContainer>
@@ -98,7 +113,13 @@ export default function FathersDayPage() {
         {/* <S.BoxBrightness id="boxBright">{textBoxFour}</S.BoxBrightness> */}
         <S.BoxBlur id="boxBlur">
           <C.CardContainer>
-            <C.CardLeftSideContainer>{textBoxOne}</C.CardLeftSideContainer>
+            {/*  */}
+            <C.CardLeftSideContainer>
+              <C.CardImageContainer>
+                <C.CardImage src={OPoder} alt="Livro: o poder da ação" />
+              </C.CardImageContainer>
+            </C.CardLeftSideContainer>
+            {/*  */}
             <C.CardRightSideContainer>
               <C.CardFormContainer>
                 <C.CardFormHeader>{cardHeaderText}</C.CardFormHeader>
@@ -107,13 +128,20 @@ export default function FathersDayPage() {
                 <C.CardFormGroup>
                   <C.CardInput
                     value={userEmail}
-                    onChange={(e) => setUserEmail(e.target.value)}
+                    onChange={handleEmailInput}
                     placeholder="Your e-mail here..."
                   />
                 </C.CardFormGroup>
                 <C.CardFormButton onClick={handleForm}>
                   Subscribe
                 </C.CardFormButton>
+                {emailError ? (
+                  <C.CardInputError>
+                    {emailInvalidInputMessage}
+                  </C.CardInputError>
+                ) : (
+                  ""
+                )}
               </C.CardFormContainer>
             </C.CardRightSideContainer>
           </C.CardContainer>
@@ -125,44 +153,3 @@ export default function FathersDayPage() {
     // </Fragment>
   );
 }
-
-// <!-- Learn about backdrop-filter on CSS-Tricks: https://css-tricks.com/almanac/properties/b/backdrop-filter/ -->
-
-// <div class="container">
-//   <div class="no-support">
-//     <p>Heads up: It doesn't look like your browser supports <code>backdrop-filter</code>! Check <a href="https://caniuse.com/#feat=css-backdrop-filter">Can I use</a> for current browser support. Maybe try opening this CodePen in a different browser that supports <code>backdrop-filter</code>?</p>
-//   </div>
-//   <div class="boxes">
-//     <p>Scroll → </p>
-//     <div class="box none">
-//       <h1>backdrop-filter: none</h1>
-//     </div>
-//     <div class="box grayscale">
-//       <h1>backdrop-filter: grayscale(1)</h1>
-//     </div>
-//     <div class="box brightness">
-//       <h1>backdrop-filter: brightness(1.5)</h1>
-//     </div>
-//     <div class="box blur">
-//       <h1>backdrop-filter: blur(5px)</h1>
-//     </div>
-//     <div class="box contrast">
-//       <h1>backdrop-filter: contrast(.8)</h1>
-//     </div>
-//     <div class="box invert">
-//       <h1>backdrop-filter: invert(.7)</h1>
-//     </div>
-//     <div class="box opacity">
-//       <h1>backdrop-filter: opacity(.4)</h1>
-//     </div>
-//     <div class="box sepia">
-//       <h1>backdrop-filter: sepia(.4)</h1>
-//     </div>
-//     <div class="box saturate">
-//       <h1>backdrop-filter: saturate(1.8)</h1>
-//     </div>
-//     <div class="box hue-rotate">
-//       <h1>backdrop-filter: hue-rotate(120deg)</h1>
-//     </div>
-//   </div>
-// </div>

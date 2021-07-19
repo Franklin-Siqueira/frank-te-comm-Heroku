@@ -108,7 +108,7 @@ export const BoxText = styled.p`
 `;
 export const BoxesContainer = styled.section`
     display: flex;
-    margin-right: 20px;
+    margin-right: 10px;
     overflow: scroll;
     min-height: 100vh;
     width: 100%;
@@ -129,14 +129,14 @@ export const BoxesContainer = styled.section`
 `;
 export const Box = styled.div`
     border: 1px solid rgba(255,255,255,.7);
-    min-width: 95vw;
+    min-width: 100vw;
     min-height: 100vh;
     line-height: 1;
     padding: 15px 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .4s ease;
+    transition: all .12s ease-in-out;
 
     &:nth-child(1n + 1) {
         border-right: none;
