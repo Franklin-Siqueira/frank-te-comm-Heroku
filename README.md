@@ -28,7 +28,7 @@
 
 O endereço do exercício é o seguinte:
 
-[Visite a página clicando aqui!](https://unclefrank-labs-cardealer.netlify.app/)
+[Visite a página clicando aqui!](https://unclefrank-landingpage.herokuapp.com/)
 
 Plataforma:
 
