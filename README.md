@@ -73,7 +73,7 @@ O endereço do exercício é o seguinte:
 
 Plataforma:
 
-[Netlify](https://www.netlify.com/),
+[Heroku](https://www.heroku.com)
 
 ...
 
@@ -92,7 +92,7 @@ Todos os instrutures, mentores e alunos da [Gama Academy](https://www.gama.acade
 
 # Algumas Instruções Básicas
 
-## Hospedando o app (Netlify)
+## Hospedando o app (Heroku)
 
 . Após criar a sua conta e confirmar os seus dados no [Netlify](https://www.netlify.com/), siga os passos detalhados na plataforma;
 
