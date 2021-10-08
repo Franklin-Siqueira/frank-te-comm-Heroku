@@ -26,28 +26,52 @@
 
 [![JavaScript](https://img.shields.io/badge/--F7DF1E?logo=javascript&logoColor=000)](https://www.javascript.com/)
 
+O endereço do exercício é o seguinte:
+
+[Visite a página clicando aqui!](https://unclefrank-labs-cardealer.netlify.app/)
+
+Plataforma:
+
+[Heroku](https://www.heroku.com)
+
 ### **Desafio**
 
-- Criar uma **landing page** para uma loja fictícia, com um formulário para captação de **leads**.
+Criar um sistema de e-commerce para cadastro de email na landing page para recebimento de novidades e promoções.
 
-#### **Texto do desafio** (reprodução do original)
+Este projeto é parte do módulo **Best Practices** do programa de treinamento **Hiring Coders 2021**, implementado pela **Gama Academy**, em parceria com a **AWS, Whirpool, Corebiz, We.digi e VTex**.
 
-Desafio 2# - Gestão de Cadastros
-Hellooo!
+## 1°. Entrega 
 
-Chegou a hora de mais uma atividade prática - UHUUUL
+- Site Oficial / Landing page  
 
-2° Entrega - Gestão de Cadastros
-Criação de um sistema e-commerce para inventário de produtos e dados de clientes:
+## Entregáveis: 
 
-Entregáveis:
+-Template do site oficial 
 
-Os dados de clientes, endereços e produtos devem estar devidamente estruturados
-Dados no localstorage
-Código fonte no github com o arquivo README detalhando as funcionalidades da programação
-Bora lá? Então valendo! Esse desafio é individual, mas incentivamos que vocês troquem links entre si para feedbacks dos colegas <3
+-Landing page de promoções, estilo black friday; 
 
-Valeeendo \o/
+-Cadastre seu e-mail para receber promoções 
+
+-Dados no localstorage
+
+- Não é preciso ter domínio próprio e recomendamos o Netlify para hospedagem.git
+
+## Resultado:
+
+O aplicativo foi montado, tendo em vista uma aplicação completa (escalável). A landing page apresentada faz parte de um contexto mais amplo, em desenvolvimento.
+
+Como exercício para o aprendizado, desenvolveu-se a página na área dedicada aos testes, situada no diretório [src/assets/lab/frontend].
+
+Para os estilos utilizados na página indexLandPage.js foram empregados os componentes desenvolvidos com a biblioteca 'styled-components' (https://www.npmjs.com/package/styled-components/v/4.1.3).
+
+As referências utilizadas e os agradecimentos vão para:
+
+Todos os instrutures, mentores e alunos da Gama Academy (https://www.gama.academy/), e
+
+- Styled Components website (https://styled-components.com/docs/basics);
+- CSS Tricks (https://css-tricks.com/almanac/properties/b/backdrop-filter/);
+- UI Hut (https://www.uihut.com/web-template/header-besnik-e-learning-landing-page/8132);
+- Andy Adams (https://codepen.io/andyadams/pen/NQrrJv);
 
 ## 1° Entrega
 
@@ -67,28 +91,11 @@ Valeeendo \o/
 
 O aplicativo foi montado, tendo em vista uma aplicação simples (escalável). A página apresentada faz parte de um contexto mais amplo, em desenvolvimento.
 
-O endereço do exercício é o seguinte:
-
-[Visite](https://unclefrank-labs-cardealer.netlify.app/)
-
-Plataforma:
-
-[Heroku](https://www.heroku.com)
-
 ...
 
 Para os estilos utilizados na página indexLandPage.js foram empregados os componentes desenvolvidos com a biblioteca [styled-components](https://www.npmjs.com/package/styled-components/v/4.1.3).
 
 ...... Apesar da recomendação para hospedagem na plataforma [Netlify](https://www.netlify.com/), optou-se por adicionar uma versão para plataforma [Heroku](https://www.heroku.com),
-
-.... As referências utilizadas e os agradecimentos vão para:
-
-Todos os instrutures, mentores e alunos da [Gama Academy](https://www.gama.academy/), e:
-
-- Styled Components [website](https://styled-components.com/docs/basics);
-- [CSS Tricks](https://css-tricks.com/almanac/properties/b/backdrop-filter/);
-- [UI Hut](https://www.uihut.com/web-template/header-besnik-e-learning-landing-page/8132);
-- [Andy Adams](https://codepen.io/andyadams/pen/NQrrJv).
 
 # Algumas Instruções Básicas
 
@@ -212,42 +219,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-Desafio - Criar um sistema de e-commerce para cadastro de email na landing page para recebimento de novidades e promoções.
-
-Este projeto é parte do módulo **Best Practices** do programa de treinamento **Hiring Coders 2021**, implementado pela **Gama Academy**, em parceria com a **AWS, Whirpool, Corebiz, We.digi e VTex**.
-
-## 1°. Entrega 
-
-- Site Oficial / Landing page  
-
-## Entregáveis: 
-
--Template do site oficial 
-
--Landing page de promoções, estilo black friday; 
-
--Cadastre seu e-mail para receber promoções 
-
--Dados no localstorage
-
-- Não é preciso ter domínio próprio e recomendamos o Netlify para hospedagem.git
-
-## Resultado:
-
-O aplicativo foi montado, tendo em vista uma aplicação completa (escalável). A landing page apresentada faz parte de um contexto mais amplo, em desenvolvimento.
-
-Como exercício para o aprendizado, desenvolveu-se a página na área dedicada aos testes, situada no diretório [src/assets/lab/frontend].
-
-Para os estilos utilizados na página indexLandPage.js foram empregados os componentes desenvolvidos com a biblioteca 'styled-components' (https://www.npmjs.com/package/styled-components/v/4.1.3).
-
-As referências utilizadas e os agradecimentos vão para:
-
-Todos os instrutures, mentores e alunos da Gama Academy (https://www.gama.academy/), e
-
-- Styled Components website (https://styled-components.com/docs/basics);
-- CSS Tricks (https://css-tricks.com/almanac/properties/b/backdrop-filter/);
-- UI Hut (https://www.uihut.com/web-template/header-besnik-e-learning-landing-page/8132);
-- Andy Adams (https://codepen.io/andyadams/pen/NQrrJv);
+Desafio - 
 
 # Algumas Instruções Básicas
 
